@@ -1,9 +1,0 @@
-
-body {
-    font-family: "Baloo Thambi 2", cursive;
-    width: 900px;
-	height: 550px;
-	background-image: linear-gradient(rgb(197, 197, 196),rgba(24, 21, 21, 0)), url(bgImg.jpg);
-	margin: 20px auto;
-    
-  }
