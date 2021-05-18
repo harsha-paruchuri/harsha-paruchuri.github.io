@@ -40,7 +40,7 @@ line-height: 50px;
 text-align: center;
 font-weight: bolder;
 font-size: larger;
-color: red;
+color: #940c0c;
 /* Starting position */
 -moz-transform:translateX(100%);
 -webkit-transform:translateX(100%); 
