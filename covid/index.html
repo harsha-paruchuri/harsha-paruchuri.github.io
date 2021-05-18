@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+#a:hover{
+  color: lightskyblue;
+}
+#c:hover{
+  color:yellow;
+}
+#d:hover{
+  color: rgb(228, 7, 7);
+}
+#r:hover{
+  color: rgb(51, 255, 0);
+}
+
+.flex-container > div {
+  background-color: #333333;
+  color: white;
+  border-radius: 3%;
+  width: 200px;
+  margin: 56px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -38,36 +67,48 @@
     <!-- Chart.js (Working CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
 
-    <title>Covid-19 Tracker India</title>
+    
   </head>
   <body>
     <!-- Main Title and  Sub-heading -->
     <div class="container-fluid bg-light p-5 text-center my-3">
-      <h1 class="">Covid-19 Tracker India</h1>
+      <img src="logo.png" width="100px" height="100px" alt="alternatetext">
+      <h1 class="">Covid-19 Cases India </h1>
       <h5 class="text-muted">
-        An opensource project to keep track of all the COVID-19 cases around the
-        world.
       </h5>
+      <div class="scroll-left">
+
+<p>India drops plasma therapy from Covid treatment protocol
+The decision by the AIIMS-ICMR Covid-19 National Task Force and the Health Ministry indicates that convalescent plasma offers no therapeutic benefits in patients admitted to hospital with the disease.</p>
+</div>
     </div>
 
     <!-- Total number of confirmed and all the other info -->
-    <div class="container my-5">
-      <div class="row text-center">
-        <div class="col-3 text-warning">
-          <h5><b>Confirmed</b></h5>
-        </div>
-        <div class="col-3 text-info">
-          <h5><b>Active</b></h5>
-        </div>
-        <div class="col-3 text-success">
-          <h5><b>Recovered</b></h5>
-        </div>
-        <div class="col-3 text-danger">
-          <h5><b>Deceased</b</h5>
-          
-        </div>
-      </div>
-    </div>
+   <div class="flex-container">
+
+    <div id="c">
+  <div>Confirmed</div>
+  <p id="confirmed"></p>
+  </div>
+
+  <div id="a">
+  <div>Active</div>
+   <p id ="active"></p>
+ </div>
+
+ 
+  <div id="r">
+    <div>Recovered</div>
+  <p id ="recovered"></p>
+  </div>
+
+  
+    <div id="d">
+      <div>Deceased</div>
+  <p id="deaths"></p>
+</div>
+</div>
+
 
     <!-- Used by Chart.js -->
     <canvas id="myChart"></canvas>
@@ -75,8 +116,8 @@
     <!-- Bottom Note -->
     <div class="container text-center my-5">
       <h6 class="text-info">
-        *Click on the Confirmed/Recovered/Deaths buttons above to see the chart
-        individually.*
+       <b>Click on the Confirmed/Recovered/Deaths buttons above to see the chart
+        individually.</b>
       </h6>
     </div>
 

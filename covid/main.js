@@ -5,18 +5,21 @@ $(document).ready(function () {
       var confirmed = [];
       var recovered = [];
       var deaths = [];
+      ///var lastupdatedtime = [];///
+
   
       var total_active;
       var total_confirmed;
       var total_recovered;
       var total_deaths;
+      ///var last_date;///
   
       // Take the first element in statewise array and add the objects values into the above variables
       total_active = data.statewise[0].active;
       total_confirmed = data.statewise[0].confirmed;
       total_recovered = data.statewise[0].recovered;
       total_deaths = data.statewise[0].deaths;
-  
+      ///last_date = data.statewise[0].lastupdatedtime;///
       // The each loop select a single statewise array element
       // Take the data in that array and add it to variables
       $.each(data.statewise, function (id, obj) {
@@ -24,6 +27,7 @@ $(document).ready(function () {
         confirmed.push(obj.confirmed);
         recovered.push(obj.recovered);
         deaths.push(obj.deaths);
+        ///lastupdatedtime.push(obj.lastupdatedtime);///
       });
   
       // Remove the first element in the states, confirmed, recovered, and deaths as that is the total value
@@ -31,13 +35,14 @@ $(document).ready(function () {
       confirmed.shift();
       recovered.shift();
       deaths.shift();
+      ///lastupdatedtime.shift();///
   
       // console.log(confirmed);
       $("#confirmed").append(total_confirmed);
       $("#active").append(total_active);
       $("#recovered").append(total_recovered);
       $("#deaths").append(total_deaths);
-  
+     /// $("#lastupdatedtime").append(last_date);///
       // Chart initialization
       var myChart = document.getElementById("myChart").getContext("2d");
       var chart = new Chart(myChart, {
@@ -46,23 +51,30 @@ $(document).ready(function () {
           labels: states,
           datasets: [
             {
-              label: "Confirmed Cases",
+              label: "CONFIRMED CASES",
               data: confirmed,
-              backgroundColor: "#f1c40f",
+              backgroundColor: "#ffe600",
               minBarLength: 100,
             },
             {
-              label: "Recovered",
+              label: "RECOVERED",
               data: recovered,
-              backgroundColor: "#2ecc71",
+              backgroundColor: "#07e866",
               minBarLength: 100,
             },
             {
-              label: "Deceased",
+              label: "DECEASED",
               data: deaths,
-              backgroundColor: "#e74c3c",
+              backgroundColor: "#fa0000",
               minBarLength: 100,
+              
             },
+          /// {
+          /// label: "LAST UPDATED TIME",
+          /// data: lastupdatedtime,
+          /// backgroundColor: "#fa0000",
+          ///},
+
           ],
         },
         option: {},
