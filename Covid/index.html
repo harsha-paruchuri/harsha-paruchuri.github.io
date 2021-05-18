@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Corona Virus India Tracker</title>
     <style>
 .flex-container {
   display: flex;
@@ -22,7 +23,7 @@
 .flex-container > div {
   background-color: #333333;
   color: white;
-  border-radius: 3%;
+  border-radius: 10%;
   width: 200px;
   margin: 56px;
   text-align: center;
@@ -66,45 +67,43 @@
 
     <!-- Chart.js (Working CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
-
+    
     
   </head>
   <body>
     <!-- Main Title and  Sub-heading -->
     <div class="container-fluid bg-light p-5 text-center my-3">
-      <img src="logo.png" width="100px" height="100px" alt="alternatetext">
-      <h1 class="">Covid-19 Cases India </h1>
-      <h5 class="text-muted">
-      </h5>
-      <div class="scroll-left">
-
-<p>India drops plasma therapy from Covid treatment protocol
-The decision by the AIIMS-ICMR Covid-19 National Task Force and the Health Ministry indicates that convalescent plasma offers no therapeutic benefits in patients admitted to hospital with the disease.</p>
-</div>
+      <img align = "right" src="icon.png" width="200px"  alt="alternatetext">  
+      <img align = "left" src="logo.png" width="125px" height="125px" alt="alternatetext">
+      <h1 class="">Statewise Covid-19 Cases India </h1>
+      <div class="scroll-left"> <p><b>India drops plasma therapy from Covid treatment protocol</b></p> 
+      </div>
     </div>
+    
+    </div>
+
 
     <!-- Total number of confirmed and all the other info -->
    <div class="flex-container">
-
     <div id="c">
-  <div>Confirmed</div>
+  <div><b>Confirmed</b></div>
   <p id="confirmed"></p>
   </div>
 
   <div id="a">
-  <div>Active</div>
+  <div><b>Active</b></div>
    <p id ="active"></p>
  </div>
 
  
   <div id="r">
-    <div>Recovered</div>
+    <div><b>Recovered</b></div>
   <p id ="recovered"></p>
   </div>
 
   
     <div id="d">
-      <div>Deceased</div>
+      <div><b>Deceased</b></div>
   <p id="deaths"></p>
 </div>
 </div>
