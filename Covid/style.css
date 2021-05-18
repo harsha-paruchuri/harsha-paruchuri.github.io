@@ -3,7 +3,12 @@ body {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.466),rgba(109, 101, 101, 0.507))/*, url(background.jpg)*/
   
 }
+#particles-js
+{
+    height: 68%;
+    background: #940c0c
 
+}
 .flex-container:hover {
 background-color: #d9d9d9;
 }
@@ -11,6 +16,7 @@ background-color: #d9d9d9;
 .flex-container {
 display: flex;
 flex-direction: row;
+
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
@@ -32,6 +38,9 @@ height: 100%;
 margin: 0;
 line-height: 50px;
 text-align: center;
+font-weight: bolder;
+font-size: larger;
+color: #940c0c;
 /* Starting position */
 -moz-transform:translateX(100%);
 -webkit-transform:translateX(100%); 
@@ -39,7 +48,7 @@ transform:translateX(100%);
 /* Apply animation to this element */ 
 -moz-animation: scroll-left 20s linear infinite;
 -webkit-animation: scroll-left 20s linear infinite;
-animation: scroll-left 20s linear infinite;
+animation: scroll-left 15s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
