@@ -7,8 +7,8 @@
   display: flex;
   background-color: #f1f1f1;
 }
-#a:hover{
-  color: lightskyblue;
+#an:hover{
+  color: rgb(56, 172, 221);
 }
 #c:hover{
   color:yellow;
@@ -29,6 +29,10 @@
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+.bottom{
+  background-color: rgb(229, 155, 159);
+  text-align:center;
 }
 </style>
     <meta charset="UTF-8" />
@@ -68,58 +72,81 @@
     <!-- Chart.js (Working CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     
-    
+  
   </head>
   <body>
     <!-- Main Title and  Sub-heading -->
     <div class="container-fluid bg-light p-5 text-center my-3">
-      <img align = "right" src="icon.png" width="200px"  alt="alternatetext">  
-      <img align = "left" src="logo.png" width="125px" height="125px" alt="alternatetext">
+      <a href="https://www.mygov.in/covid-19/" name="mygov.in" target="_blank">
+      <img align = "right" src="icon.png" width="200px"  alt="alternatetext" class="image"></a> 
+      
+      <a href="https://covid19.who.int/" target="_blank">
+      <img align = "left" src="logo.png" width="125px" height="125px" alt="alternatetext" class="image"></a>
       <h1 class="">Statewise Covid-19 Cases India </h1>
-      <div class="scroll-left"> <p><b>India drops plasma therapy from Covid treatment protocol</b></p> 
+      <div class="scroll-left"> <p><b>Covid-19 Helpline Number : +91-11-23978046 &NonBreakingSpace; &nbsp &nbsp &nbsp Helpline Email ID : ncov2019@gov.in</b></p> 
       </div>
     </div>
     
     </div>
-
-
+    
+  </body>
     <!-- Total number of confirmed and all the other info -->
-   <div class="flex-container">
+    <div class="flex-container">
+      
     <div id="c">
-  <div><b>Confirmed</b></div>
+  <div>Total Confirmed</div>
   <p id="confirmed"></p>
   </div>
 
-  <div id="a">
-  <div><b>Active</b></div>
+  <div id="an">
+  <div>Active</div>
    <p id ="active"></p>
  </div>
 
  
   <div id="r">
-    <div><b>Recovered</b></div>
+    <div>Recovered</div>
   <p id ="recovered"></p>
   </div>
 
   
     <div id="d">
-      <div><b>Deceased</b></div>
+      <div>Deceased</div>
   <p id="deaths"></p>
 </div>
-</div>
 
+</div>
+<div class="container text-center my-5">
+  <h6>
+   Click on the Confirmed Cases/Recovered/Deaths buttons below to see the chart
+  individually.
+  </h6>
+</div>
 
     <!-- Used by Chart.js -->
     <canvas id="myChart"></canvas>
-
+<br>
     <!-- Bottom Note -->
-    <div class="container text-center my-5">
-      <h6 class="text-info">
-       <b>Click on the Confirmed/Recovered/Deaths buttons above to see the chart
-        individually.</b>
-      </h6>
-    </div>
+    <footer>
+      <div class="bottom">
+        <footer>
+         <h4>Register for Covid-19 Vaccine here</h4><br>
+         <a href="https://www.cowin.gov.in" target="_blank">
+          <img src="cowin.jpg" alt="COWIN APP" class="image" style="width:90px;height:90px;border-radius: 50%;">
+          </a>
 
-    
+          <br><br><h4>Arogyasetu App for Android</h4>
+          <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu" target="_blank">
+            <img src="as.jpg" alt="AROGYASETU" class="image" style="width:90px;height:90px;border-radius: 50%;">
+            </a>
+        </footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </footer>
   </body>
 </html>
