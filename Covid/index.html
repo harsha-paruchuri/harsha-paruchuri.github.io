@@ -30,10 +30,8 @@
   line-height: 75px;
   font-size: 30px;
 }
-.bottom{
-  background-color: rgb(229, 155, 159);
-  text-align:center;
-}
+
+
 </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,6 +63,7 @@
 
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"/>
 
     <!-- My jQuery -->
     <script src="main.js"></script>
@@ -77,7 +76,7 @@
   <body>
     <!-- Main Title and  Sub-heading -->
     <div class="container-fluid bg-light p-5 text-center my-3">
-      <a href="https://www.mygov.in/covid-19/" name="mygov.in" target="_blank">
+      <a title="COVID-19 OFFICIAL WEBSITE INDIA" href="https://www.mygov.in/covid-19/" name="mygov.in" target="_blank">
       <img align = "right" src="icon.png" width="200px"  alt="alternatetext" class="image"></a> 
       
       <a href="https://covid19.who.int/" target="_blank">
@@ -94,7 +93,7 @@
     <div class="flex-container">
       
     <div id="c">
-  <div>Total Confirmed</div>
+  <div>Confirmed</div>
   <p id="confirmed"></p>
   </div>
 
@@ -127,26 +126,25 @@
     <canvas id="myChart"></canvas>
 <br>
     <!-- Bottom Note -->
-    <footer>
       <div class="bottom">
-        <footer>
-         <h4>Register for Covid-19 Vaccine here</h4><br>
-         <a href="https://www.cowin.gov.in" target="_blank">
-          <img src="cowin.jpg" alt="COWIN APP" class="image" style="width:90px;height:90px;border-radius: 50%;">
-          </a>
-
-          <br><br><h4>Arogyasetu App for Android</h4>
-          <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu" target="_blank">
-            <img src="as.jpg" alt="AROGYASETU" class="image" style="width:90px;height:90px;border-radius: 50%;">
-            </a>
-        </footer>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-    </footer>
+        <p>Register for Covid Vaccine here ☞ </p>
+        
+      <a href="https://www.cowin.gov.in" target="_blank">
+          <img title="COWIN WEBSITE" src="cowin.jpg" alt="COWIN APP" class="image" style="width:80px;height:80px;border-radius:50%;">
+          </a><br><br><br>
+      </div> 
+      <footer>
+      <div class="social">
+        <p>Follow Government of India ☞ </p>
+        <ul>
+          <a href="https://www.facebook.com/MyGovIndia" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a> 
+          <a href="https://www.twitter.com/mygovindia" target="_blank"><li><i class="fab fa-twitter"></i></li></a>
+          <a href="https://www.instagram.com/mygovindia" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+          <a href="https://www.linkedin.com/company/mygov-india/" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
+          <a href="https://www.youtube.com/mygovindia" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+          <a href="https://wa.me/919013151515?text=Hi" target="_blank"><li><i class="fab fa-whatsapp"></i></li></a>
+           </ul>
+          </div>
+        </footer>  
   </body>
 </html>
