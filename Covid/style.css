@@ -59,18 +59,18 @@ flex-direction: row;
 }
 #c p:nth-of-type(1) {
   color: yellow;
-  font-family:"cursive";
+  font-family:"Times New Roman"
 }
 #r p:nth-of-type(1) {
-  font-family:"cursive";
+  font-family:"Times New Roman";
   color:red;
 }
 #an p:nth-of-type(1) {
-  font-family:"cursive";
+  font-family:"Times New Roman";
   color:#00bfff;
 }
 #d p:nth-of-type(1) {
-  font-family:"cursive";
+  font-family:"Times New Roman";
   color: red;
 }
 #c p:nth-of-type(2) {
