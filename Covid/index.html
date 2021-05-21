@@ -5,19 +5,31 @@
     <style>
 .flex-container {
   display: flex;
-  background-color: #f1f1f1;
+  background-color: #5A72A5;
+  cursor: pointer;
+}
+#l{
+  text-align:right;
+  color:black;
+  font-weight: 700;
+  font-size: 12px!important;
+  font-family: "9Archia";
 }
 #an:hover{
   color: rgb(56, 172, 221);
+  cursor: pointer;
 }
 #c:hover{
   color:yellow;
+  cursor: pointer;
 }
 #d:hover{
   color: rgb(228, 7, 7);
+  cursor: pointer;
 }
 #r:hover{
   color: rgb(51, 255, 0);
+  cursor: pointer;
 }
 
 .flex-container > div {
@@ -30,8 +42,6 @@
   line-height: 75px;
   font-size: 30px;
 }
-
-
 </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,6 +94,11 @@
       <h1 class="">&nbsp;&nbsp;&nbsp;&nbsp;  Covid-19 Cases India </h1>
       <div class="scroll-left"> <p><b>Covid-19 Helpline Number : +91-11-23978046 &NonBreakingSpace; &nbsp &nbsp &nbsp Helpline Email ID : ncov2019@gov.in</b></p> 
       </div>
+      <div id="l">
+        <div>Last Updated</div>
+        <p id="lastupdatedtime"></p>
+        </div>
+      
     </div>
     
     </div>
@@ -114,6 +129,7 @@
   <p id="deaths"></p>
 </div>
 
+
 </div>
 <div class="container text-center my-5">
   <h6>
@@ -127,12 +143,20 @@
 <br>
     <!-- Bottom Note -->
       <div class="bottom">
-        <p>Register for Covid Vaccine here ☞ </p>
+        <p>Register for <span style="color:rgb(14, 83, 80);font-weight:bold">Covid-19 Vaccine</span> here ☞ </p>
         
-      <a href="https://www.cowin.gov.in" target="_blank">
+      <a href="https://selfregistration.cowin.gov.in/" target="_blank">
           <img title="COWIN WEBSITE" src="cowin.jpg" alt="COWIN APP" class="image" style="width:80px;height:80px;border-radius:50%;">
           </a><br><br><br>
+      </div>
+      <div class="bottom-next">
+        <p>Download Aarogya Setu Mobile App here ☞&nbsp; </p>
+        
+      <a href="https://www.mygov.in/aarogya-setu-app/?app=aarogya&target=browser&t=1621525924" target="_blank">
+          <img title="AAROGYA SETU APP" src="as.jpg" alt="COWIN APP" class="image" style="width:80px;height:80px;border-radius:50%;">
+          </a><br><br><br>
       </div> 
+
       <footer>
       <div class="social">
         <p>Follow Government of India ☞ </p>
