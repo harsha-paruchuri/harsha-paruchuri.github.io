@@ -8,12 +8,7 @@
   background-color: #5A72A5;
   cursor: pointer;
 }
-#l{
-  text-align:right;
-  color:black;
-  font-weight: 700;
-  font-size: 12px;
-}
+
 #an:hover{
   color: rgb(56, 172, 221);
   cursor: pointer;
@@ -32,14 +27,15 @@
 }
 
 .flex-container > div {
-  background-color: #333333;
+  background-color: #221c1c;
   color: white;
   border-radius: 10%;
-  width: 200px;
+  width: 250px;
+  height: 170px;
   margin: 56px;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  line-height: 55px;
+  font-size: 25px;
 }
 </style>
     <meta charset="UTF-8" />
@@ -109,25 +105,28 @@
     <div id="c">
   <div>Confirmed</div>
   <p id="confirmed"></p>
+  <p id="deltaconfirmed"><small>+</small></p>
   </div>
 
-  <div id="an">
-  <div>Active</div>
-   <p id ="active"></p>
- </div>
+ 
 
  
   <div id="r">
     <div>Recovered</div>
   <p id ="recovered"></p>
+  <p id="deltarecovered"><small>+</small></p>
   </div>
 
   
     <div id="d">
       <div>Deceased</div>
   <p id="deaths"></p>
+  <p id="deltadeaths"><small>+</small></p>
 </div>
-
+<div id="an">
+  <div>Active</div>
+   <p id ="active"></p>
+ </div>
 
 </div>
 <div class="container text-center my-5">
