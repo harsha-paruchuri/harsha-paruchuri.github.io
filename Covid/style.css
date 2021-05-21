@@ -63,7 +63,7 @@ flex-direction: row;
 }
 #r p:nth-of-type(1) {
   font-family:'Times New Roman';
-  color:red;
+  color:#6bdb4f;
 }
 #an p:nth-of-type(1) {
   font-family:'Times New Roman';
