@@ -16,9 +16,19 @@ h6{
 }
 #l{
   text-align:right;
-  color:red;
-  font-weight: bolder;
+  color:rgb(165, 0, 52);
+  font-weight:bolder;
   font-size: 22px;
+  animation: blink 3s backwards ;
+  font-family: 'Copse', serif;
+  
+}
+@keyframes blink {
+  50% {
+opacity: 0.1;
+fill-opacity: initial;
+  }
+ 
   
 }
 .bottom{
@@ -44,7 +54,7 @@ h6{
 }
 #particles-js
 {
-    height: 67%;
+    height: 68%;
     background: #940c0c;
     
 
@@ -59,31 +69,32 @@ flex-direction: row;
 }
 #c p:nth-of-type(1) {
   color: yellow;
-  font-family:'Times New Roman';
+  font-family:'Times New Roman', Times, serif;
+
 }
 #r p:nth-of-type(1) {
-  font-family:'Times New Roman';
+  font-family:'Times New Roman', Times, serif;
   color:#6bdb4f;
 }
 #an p:nth-of-type(1) {
-  font-family:'Times New Roman';
+  font-family:'Times New Roman', Times, serif;
   color:#00bfff;
 }
 #d p:nth-of-type(1) {
-  font-family:'Times New Roman';
+  font-family:'Times New Roman', Times, serif;
   color: red;
 }
 #c p:nth-of-type(2) {
   color: #d5df52;
-  font-size: 25px;
+  font-size: 20px;
 }
 #r p:nth-of-type(2) {
   color: #6bdb4f;
-  font-size: 25px;
+  font-size: 20px;
 }
 #d p:nth-of-type(2) {
   color: #f03f3f;
-  font-size: 25px;
+  font-size: 20px;
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
