@@ -3,9 +3,29 @@ body {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.466),rgba(109, 101, 101, 0.507))/*, url(background.jpg)*/
   
 }
+header{
+  width:120%;
+  display: flex;
+  align-items: center;
+  top: 2px;
+  left: 10px;
+  z-index: 1000;
+background-color: #dae09e;
+}
+header .virus{
+  font-size: 1.75rem;
+  color:rgb(41, 33, 33);
+  -moz-box-shadow: 0 0 10px rgb(238, 93, 93);
+  -webkit-box-shadow: 0 0 10px rgb(238, 93, 93);
+  box-shadow: 0 0 10px rgb(238, 93, 93);
+}
+header .virus span{
+  color:var(--red);
+}
 h1{
   text-shadow: 0.75px 0.75px #d4b590;
 }
+
 h6{
   font-family: 'BioRhyme', serif;
   font-size: 150%;
@@ -19,7 +39,7 @@ h6{
   color:rgb(165, 0, 52);
   font-weight:bolder;
   font-size: 22px;
-  animation: blink 3s backwards infinite;
+  animation: blink 3s backwards infinite ;
   font-family: 'Copse', serif;
   
 }
@@ -59,8 +79,19 @@ fill-opacity: initial;
     
 
 }
-.flex-container:hover {
+.image:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -moz-box-shadow: 0 0 10px rgb(238, 93, 93);
+  -webkit-box-shadow: 0 0 10px rgb(238, 93, 93);
+  box-shadow: 0 0 10px rgb(238, 93, 93);
+}
+
+
+.flex-container:hover,.flex-container:active{
 background-color: #914260;
+font-size: xx-large;
+
 }
 .flex-container {
 display: flex;
@@ -153,15 +184,7 @@ transform: translateX(-100%);
   font-family: 'BioRhyme', serif;
 
 }
-.image:hover {
-  opacity: 0.7;
-  background: #ac5252;
-}
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 .social{
   display: flex;
   height: auto;
@@ -193,4 +216,7 @@ ul li{
 ul li:hover{
   color: #17bdbd;
   box-shadow: 0 0 15px #E1306C;
+  font-size: xx-large;
+
 }
+
